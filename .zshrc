@@ -101,8 +101,10 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR="vim"
 export TERMINAL="st"
+PATH=/home/odisei/.gem/ruby/2.5.0/bin:$PATH
 
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export LC_ALL=en_US.UTF-8
+source /usr/share/nvm/init-nvm.sh
