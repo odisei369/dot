@@ -98,13 +98,21 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias vim='nvim'
+alias cat='bat'
+alias ls='exa'
 
-export EDITOR="vim"
+export EDITOR="nvim"
 export TERMINAL="st"
-PATH=/home/odisei/.gem/ruby/2.5.0/bin:$PATH
+PATH=~/.local/bin:~/.gem/ruby/2.5.0/bin:$PATH
 
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export LC_ALL=en_US.UTF-8
 source /usr/share/nvm/init-nvm.sh
+
+export FZF_DEFAULT_COMMAND='rg --files --hidden --follow'
+export GOPATH=$HOME/go
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
